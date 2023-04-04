@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Domaci OMDB</title>
+</head>
+
+<body>
+  <!-- <nav class="navbar bg-primary"> -->
+  <nav class="navbar ">
+    <div class="container-fluid">
+      <a class="navbar-brand">OpenMovieDatabase</a>
+      <form class="d-flex form" role="search">
+        <div class="searchForm">
+          <input class="form-control me-2 inputSearch" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-primary searchButton" type="submit">Search</button>
+        </div>
+        <button class="btn btn-primary cartButton" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Cart</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+  <div class="nav">
+    <nav aria-label="...">
+      <ul class="pagination">
+        <li class="page-item ">
+          <a class="page-link previous" href="#">Previous</a>
+        </li>
+        <input type="text" class="currentPage text-center" disabled>
+        </li>
+        <li class="page-item">
+          <a class="page-link next text-center" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">SHOPPING CART</h5>
+      <button type="button" id="buttonClose" class="btn-close closeButton" data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+    </div>
+  </div>
+
+
+
+  <div class="cardMain">
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
